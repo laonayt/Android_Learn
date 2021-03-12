@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:padding="18dp"
+              android:orientation="vertical">
+
+    <Button
+            android:id="@+id/bt_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="IP"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="登录"
+            android:textSize="35sp"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="40dp"
+            android:text="用户名"
+            android:textSize="14dp"
+    />
+    <EditText
+            android:id="@+id/ev_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:hint="请输入用户名"
+            android:textSize="14dp"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:text="密码"
+            android:textSize="14dp"
+    />
+    <EditText
+            android:id="@+id/ev_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:hint="请输入密码"
+            android:textSize="14sp"
+    />
+    <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="60dp"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:background="@color/green"
+    />
+
+</LinearLayout>

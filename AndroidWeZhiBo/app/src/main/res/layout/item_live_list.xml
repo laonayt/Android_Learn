@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/classroom"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:id="@+id/tv_see_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="13人观看"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="标题"
+            />
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sepcolor"
+        />
+
+
+</LinearLayout>

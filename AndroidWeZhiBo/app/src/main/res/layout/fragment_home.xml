@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/skyblue">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                >
+                <LinearLayout
+                    android:id="@+id/ll_search"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/shape_corner_white"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/home_search"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="输入用户称和课程名称进行搜索"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/iv_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/historical_record"
+                    />
+                <ImageView
+                    android:id="@+id/iv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/message"
+                    />
+                <ImageView
+                    android:id="@+id/iv_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_screening"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_high_quality"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_not_click_high_quality_courses"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="优课"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_small_class"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_not_click_high_quality_courses"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微课"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_famous_teacher"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_not_click_high_quality_courses"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="名师"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_live"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_not_click_high_quality_courses"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="直播"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smart.refresh.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.scwang.smart.refresh.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

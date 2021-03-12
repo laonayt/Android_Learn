@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="设置IP"
+        android:textSize="45sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="left"
+        android:text="请输入服务器地址"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:hint="例如：192.168.1.1"
+        android:textSize="13sp"
+        />
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/blue"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+
+        />
+    <Button
+        android:id="@+id/bt_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/gray"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        />
+
+
+</LinearLayout>
